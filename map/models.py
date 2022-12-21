@@ -10,6 +10,7 @@ class Well(models.Model):
     thumbnailImage = models.TextField(null=True, blank=True, verbose_name='صورة البئر')
     extraImages = models.TextField(null=True, blank=True, verbose_name='صور اضافيه')
     country = CountryField(verbose_name='الدوله')
+    video = models.TextField(null=True, blank=True, verbose_name='فيديو')
 
     def __str__(self):
         return self.name
